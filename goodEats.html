@@ -93,6 +93,24 @@
 		  				<input type="checkbox" id="chipCheck4"  onclick="countChecks(chipCheckArray,chipCheckArray[3], chipCheckCount)">
 		  				<input type="checkbox" id="chipCheck5"  onclick="countChecks(chipCheckArray,chipCheckArray[4], chipCheckCount)">
 		  				</p>
+		  				<br>
+		  				<p id="macCheckNum"></p>
+		  				<p>
+		  				<input type="checkbox" id="macCheck1"  onclick="countChecks(macCheckArray,macCheckArray[0], macCheckCount)">
+		  				<input type="checkbox" id="macCheck2"  onclick="countChecks(macCheckArray,macCheckArray[1], macCheckCount)">
+		  				<input type="checkbox" id="macCheck3"  onclick="countChecks(macCheckArray,macCheckArray[2], macCheckCount)">
+		  				<input type="checkbox" id="macCheck4"  onclick="countChecks(macCheckArray,macCheckArray[3], macCheckCount)">
+		  				<input type="checkbox" id="macCheck5"  onclick="countChecks(macCheckArray,macCheckArray[4], macCheckCount)">
+		  				</p>
+		  				<br>
+		  				<p id="wendCheckNum"></p>
+		  				<p>
+		  				<input type="checkbox" id="wendCheck1"  onclick="countChecks(wendCheckArray,wendCheckArray[0], wendCheckCount)">
+		  				<input type="checkbox" id="wendCheck2"  onclick="countChecks(wendCheckArray,wendCheckArray[1], wendCheckCount)">
+		  				<input type="checkbox" id="wendCheck3"  onclick="countChecks(wendCheckArray,wendCheckArray[2], wendCheckCount)">
+		  				<input type="checkbox" id="wendCheck4"  onclick="countChecks(wendCheckArray,wendCheckArray[3], wendCheckCount)">
+		  				<input type="checkbox" id="wendCheck5"  onclick="countChecks(wendCheckArray,wendCheckArray[4], wendCheckCount)">
+		  				</p>
 		  			</div>
 		  		</span>
 			</div>
@@ -106,13 +124,17 @@
 	</div>
 </body>
 <script>
-	var totalChecks = 15;
+	var totalChecks = 25;
 	var tacoCheckCount = 0;
 	var panCheckCount = 0;
 	var chipCheckCount = 0;
+	var macCheckCount = 0;
+	var wendCheckCount = 0;
 	var totalTacoChecks = 0;
 	var totalPanChecks = 0;
 	var totalChipChecks = 0;
+	var totalMacChecks = 0;
+	var totalWendChecks = 0;
 	var rollButton = document.getElementById("rollButton");
 	//var foodTypes = ["taco", "pan", "chip"];
 	document.getElementById("foodHeader").innerHTML = "Roll The Dice!";	
@@ -120,6 +142,8 @@
 	document.getElementById("tacoCheckNum").innerHTML = "Taco Bell";
 	document.getElementById("panCheckNum").innerHTML = "Panera Bread";
 	document.getElementById("chipCheckNum").innerHTML = "Chipotle";
+	document.getElementById("macCheckNum").innerHTML = "McDonalds";
+	document.getElementById("wendCheckNum").innerHTML = "Wendy's";
 	var tacoCheckArray = [document.getElementById("tacoCheck1"), 
 						  document.getElementById("tacoCheck2"),
 						  document.getElementById("tacoCheck3"), 
@@ -135,7 +159,17 @@
 						  document.getElementById("chipCheck3"), 
 						  document.getElementById("chipCheck4"),
 						  document.getElementById("chipCheck5")];
-	var randomArray = [1,2,3];
+	var macCheckArray = [document.getElementById("macCheck1"), 
+						  document.getElementById("macCheck2"),
+						  document.getElementById("macCheck3"), 
+						  document.getElementById("macCheck4"),
+						  document.getElementById("macCheck5")];
+	var wendCheckArray = [document.getElementById("wendCheck1"), 
+						  document.getElementById("wendCheck2"),
+						  document.getElementById("wendCheck3"), 
+						  document.getElementById("wendCheck4"),
+						  document.getElementById("wendCheck5")];
+	var randomArray = [1, 2, 3, 4, 5];
 	/*function createCheckBoxes(foodType, checkArray,checkCount){
 		for(let i = 0; i < 5; i++)
 		{

@@ -1,7 +1,7 @@
 
 function countChecks(checkArray, checkBoxNum, foodCheckCount){
 	var count = 0;
-	totalChecks = 15;
+	totalChecks = 25;
 	randomArray = [1, 2, 3, 4, 5];
 
 	if(checkBoxNum == checkArray[4])
@@ -56,7 +56,7 @@ function countChecks(checkArray, checkBoxNum, foodCheckCount){
 	}
 	totalChecks -= (totalTacoChecks + totalPanChecks + totalChipChecks + totalMacChecks + totalWendChecks);
 	document.getElementById("checkNum").innerHTML = "Points Left: " + totalChecks;
-	if(totalChecks < 15)
+	if(totalChecks < 25)
 	{
 		randomArray = [];
 	}

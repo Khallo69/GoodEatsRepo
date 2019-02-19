@@ -54,6 +54,11 @@ function countChecks(checkArray, checkBoxNum, foodCheckCount){
 	{
 		totalWendChecks = foodCheckCount;
 	}
+	console.log(totalTacoChecks);
+	console.log(totalPanChecks);
+	console.log(totalChipChecks);
+	console.log(totalMacChecks);
+	console.log(totalWendChecks);
 	totalChecks -= (totalTacoChecks + totalPanChecks + totalChipChecks + totalMacChecks + totalWendChecks);
 	document.getElementById("checkNum").innerHTML = "Points Left: " + totalChecks;
 	if(totalChecks < 25)

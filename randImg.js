@@ -27,11 +27,11 @@ console.log(randomArray);
 					break;
 				case 4:
 					image.src = "https://seeklogo.net/wp-content/uploads/2011/04/old-mcdonalds-vector-logo.png";
-					document.getElementById("foodHeader").innerHTML = "Might!";
+					document.getElementById("foodHeader").innerHTML = "Macky!";
 					break;
 				case 5:
 					image.src = "http://www.stickpng.com/assets/images/58429d58a6515b1e0ad75ae8.png";
-					document.getElementById("foodHeader").innerHTML = "Wight!";
+					document.getElementById("foodHeader").innerHTML = "Wacky!";
 					break;
 			}
 		} else {
